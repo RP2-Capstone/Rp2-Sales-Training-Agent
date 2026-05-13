@@ -1,0 +1,2378 @@
+[
+  {
+    "course": "Data Science",
+    "question": "What would be the duration of the course?",
+    "answer": "The Data Science course duration is usually around 4 months, depending on the learning mode you choose. It includes both theoretical learning and practical project work.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "What would be the duration of the course?",
+    "answer": "The Data Science course duration is usually around 4 months, depending on the learning mode you choose. It includes both theoretical learning and practical project work.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "What would be the duration of the course?",
+    "answer": "The Data Science course duration is usually around 4 months, depending on the learning mode you choose. It includes both theoretical learning and practical project work.",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "What would be the duration of the course?",
+    "answer": "The Data Science course duration is usually around 4 months, depending on the learning mode you choose. It includes both theoretical learning and practical project work.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "What was the detailed syllabus of the course or the weekly breakdown of topics",
+    "answer": "The syllabus starts with Python programming from basics, then moves to Statistics, Mathematics for Data Science, NumPy, Pandas, Data Visualization, SQL, Machine Learning, Deep Learning basics, Power BI/Tableau, and real-time projects. Interview preparation, resume building, and placement training are also included in the final stage.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "What was the detailed syllabus of the course or the weekly breakdown of topics",
+    "answer": "The syllabus starts with Python programming from basics, then moves to Statistics, Mathematics for Data Science, NumPy, Pandas, Data Visualization, SQL, Machine Learning, Deep Learning basics, Power BI/Tableau, and real-time projects. Interview preparation, resume building, and placement training are also included in the final stage.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "What specific software, tools include in the course",
+    "answer": "The course includes Python, Jupyter Notebook, Google Colab, SQL, MySQL, Excel, Power BI, Tableau, NumPy, Pandas, Matplotlib, Scikit-learn, and basic Deep Learning tools like TensorFlow introduction. GitHub and resume preparation tools are also included.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "What specific software, tools include in the course",
+    "answer": "The course includes Python, Jupyter Notebook, Google Colab, SQL, MySQL, Excel, Power BI, Tableau, NumPy, Pandas, Matplotlib, Scikit-learn, and basic Deep Learning tools like TensorFlow introduction. GitHub and resume preparation tools are also included.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "Course fee structure",
+    "answer": "The total course fee is approximately \u20b940,000, and EMI options are available for flexible monthly payment.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Course fee structure",
+    "answer": "The total course fee is approximately \u20b940,000, and EMI options are available for flexible monthly payment.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Course fee structure",
+    "answer": "The total course fee is approximately \u20b940,000, and EMI options are available for flexible monthly payment.",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "Course fee structure",
+    "answer": "The total course fee is approximately \u20b940,000, and EMI options are available for flexible monthly payment.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "EMI options",
+    "answer": "Can be paid 10000 initially included registration fee and the remaining can be paid each month 10000/-",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "EMI options",
+    "answer": "Can be paid 10000 initially included registration fee and the remaining can be paid each month 10000/-",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "Will Python be taught from the beginning?",
+    "answer": "Yes, Python is taught completely from the beginning. We start from basic concepts like variables, loops, functions, and gradually move into advanced libraries like NumPy, Pandas, and Machine Learning implementation. No prior programming experience is needed.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Will Python be taught from the beginning?",
+    "answer": "Yes, Python is taught completely from the beginning. We start from basic concepts like variables, loops, functions, and gradually move into advanced libraries like NumPy, Pandas, and Machine Learning implementation. No prior programming experience is needed.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "Will Python be taught from the beginning?",
+    "answer": "Yes, Python is taught completely from the beginning. We start from basic concepts like variables, loops, functions, and gradually move into advanced libraries like NumPy, Pandas, and Machine Learning implementation. No prior programming experience is needed.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "What are the Positions comes under this Course",
+    "answer": "After completing the course, students can apply for roles like Data Analyst, Data Scientist, Business Analyst, Machine Learning Engineer, Data Engineer (entry level), BI Analyst, Python Developer, and Junior AI/ML Engineer depending on their skill level and project experience.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "What are the Positions comes under this Course",
+    "answer": "After completing the course, students can apply for roles like Data Analyst, Data Scientist, Business Analyst, Machine Learning Engineer, Data Engineer (entry level), BI Analyst, Python Developer, and Junior AI/ML Engineer depending on their skill level and project experience.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "What are the Positions comes under this Course",
+    "answer": "After completing the course, students can apply for roles like Data Analyst, Data Scientist, Business Analyst, Machine Learning Engineer, Data Engineer (entry level), BI Analyst, Python Developer, and Junior AI/ML Engineer depending on their skill level and project experience.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "What is the average salary after moving into Data Science Career?",
+    "answer": "For freshers, the average starting salary usually ranges between \u20b93.5 LPA to \u20b96 LPA depending on skills, projects, and interview performance. With strong practical knowledge and experience, salaries can grow much higher in a few years.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "What is the average salary after moving into Data Science Career?",
+    "answer": "For freshers, the average starting salary usually ranges between \u20b93.5 LPA to \u20b96 LPA depending on skills, projects, and interview performance. With strong practical knowledge and experience, salaries can grow much higher in a few years.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is math included in Data Science?",
+    "answer": "Yes, basic mathematics and statistics are important parts of Data Science. Topics like probability, mean, median, standard deviation, linear algebra basics, and statistics are taught in a simple practical way. You do not need advanced mathematics expertise to start",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is math included in Data Science?",
+    "answer": "Yes, basic mathematics and statistics are important parts of Data Science. Topics like probability, mean, median, standard deviation, linear algebra basics, and statistics are taught in a simple practical way. You do not need advanced mathematics expertise to start",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "What is Data Science actually",
+    "answer": "Data Science is the process of collecting, analyzing, and interpreting data to make better business decisions. It combines programming, statistics, and business understanding to solve real-world problems like sales prediction, fraud detection, customer analysis, and recommendation systems.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Will this help me switch my career to IT?",
+    "answer": "Yes, Data Science is one of the strongest career-switching options into IT because it is in high demand across many industries. With proper training, projects, and placement support, many students successfully move from non-IT backgrounds into technical roles.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "How long is each class, and how many classes per week?",
+    "answer": "Each class is usually 2 hours long. Normally, there are 3 classes per week depending on the batch type",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "How long is each class, and how many classes per week?",
+    "answer": "Each class is usually 2 hours long. Normally, there are 3 classes per week depending on the batch type",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "How long is each class, and how many classes per week?",
+    "answer": "Each class is usually 2 hours long. Normally, there are 3 classes per week depending on the batch type",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Maximum number of projects your organisation provided",
+    "answer": "We usually provide 8 to 12 hands-on projects, including mini projects and major capstone projects.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Maximum number of projects your organisation provided",
+    "answer": "We usually provide 8 to 12 hands-on projects, including mini projects and major capstone projects.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Maximum number of projects your organisation provided",
+    "answer": "We usually provide 8 to 12 hands-on projects, including mini projects and major capstone projects.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do you provide feedback on failed assignments so I can improve",
+    "answer": "Yes, absolutely. We provide detailed feedback on assignments and project submissions. Trainers explain mistakes, suggest improvements, and help students rework their tasks so they can improve their understanding and practical skills step by step.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do you provide feedback on failed assignments so I can improve",
+    "answer": "Yes, absolutely. We provide detailed feedback on assignments and project submissions. Trainers explain mistakes, suggest improvements, and help students rework their tasks so they can improve their understanding and practical skills step by step.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is coding compulsory for this course?",
+    "answer": "Basic coding is required because Data Science mainly works with Python programming.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "I am from a non-technical background, can I still learn this?",
+    "answer": "Yes, definitely. Many students from commerce, arts, management, and other non-technical backgrounds successfully move into Data Science.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "I am from a non-technical background, can I still learn this?",
+    "answer": "Yes, definitely. Many students from commerce, arts, management, and other non-technical backgrounds successfully move into Data Science.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do you provide real-time projects?",
+    "answer": "Yes, we provide real-time industry-based projects so students gain practical exposure. These projects help build strong portfolios and improve confidence during interviews.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do you provide real-time projects?",
+    "answer": "Yes, we provide real-time industry-based projects so students gain practical exposure. These projects help build strong portfolios and improve confidence during interviews.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do you provide real-time projects?",
+    "answer": "Yes, we provide real-time industry-based projects so students gain practical exposure. These projects help build strong portfolios and improve confidence during interviews.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "What other courses did you provide",
+    "answer": "In total, we are providing Data anlytics, Data Science, Agentic AI and some add-on courses Gen AI, Prompt Engineering",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "What other courses did you provide",
+    "answer": "In total, we are providing Data anlytics, Data Science, Agentic AI and some add-on courses Gen AI, Prompt Engineering",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "What other courses did you provide",
+    "answer": "In total, we are providing Data anlytics, Data Science, Agentic AI and some add-on courses Gen AI, Prompt Engineering",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is the course online/ offline or can we try hybrid?",
+    "answer": "Its according to your prefernce, the session held in 3 days for 2 hours. And the soft skill session will add among them.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is the course online/ offline or can we try hybrid?",
+    "answer": "Its according to your prefernce, the session held in 3 days for 2 hours. And the soft skill session will add among them.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is the course online/ offline or can we try hybrid?",
+    "answer": "Its according to your prefernce, the session held in 3 days for 2 hours. And the soft skill session will add among them.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "What technical support is available if I face issues with the online platform?",
+    "answer": "Our technical team is always here, they will support you if face any issues.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "What technical support is available if I face issues with the online platform?",
+    "answer": "Our technical team is always here, they will support you if face any issues.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "What technical support is available if I face issues with the online platform?",
+    "answer": "Our technical team is always here, they will support you if face any issues.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are classes live or pre-recorded?",
+    "answer": "Mostly in live classes, No recordings provided.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are classes live or pre-recorded?",
+    "answer": "Mostly in live classes, No recordings provided.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "What are the exact timings?",
+    "answer": "09.30 AM - 5.30 PM, The classess scheduled may be at forenoon or afternoon for 2 hours. It will inform you earlier.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "What are the exact timings?",
+    "answer": "09.30 AM - 5.30 PM, The classess scheduled may be at forenoon or afternoon for 2 hours. It will inform you earlier.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do you offer weekend or evening batches?",
+    "answer": "No weekend classes and evening batch.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do you offer weekend or evening batches?",
+    "answer": "No weekend classes and evening batch.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I switch between batches if my schedule changes later",
+    "answer": "It can't be tell now, its according to the mentor's response",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I switch between batches if my schedule changes later",
+    "answer": "It can't be tell now, its according to the mentor's response",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Combo Courses available or not",
+    "answer": "Yes, Data science + agentic AI for 6 month with a fee os 50000/-",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Combo Courses available or not",
+    "answer": "Yes, Data science + agentic AI for 6 month with a fee os 50000/-",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Combo Courses available or not",
+    "answer": "Yes, Data science + agentic AI for 6 month with a fee os 50000/-",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Did the course include only technical version sessions or will be there the soft skill session?",
+    "answer": "Both are avilable",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Did the course include only technical version sessions or will be there the soft skill session?",
+    "answer": "Both are avilable",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "What\u2019s all include in soft skill session?",
+    "answer": "Linkedin optimaization, GD, personalty development, personalty development,aptitude preparation, LinkedIn profile optimization mock interviews, resume buliding like etc.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "What\u2019s all include in soft skill session?",
+    "answer": "Linkedin optimaization, GD, personalty development, personalty development,aptitude preparation, LinkedIn profile optimization mock interviews, resume buliding like etc.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Will you provide the system to work?",
+    "answer": "No, the student must work on their laptop",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Will you provide the system to work?",
+    "answer": "No, the student must work on their laptop",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do all students have personal mentor?",
+    "answer": "Each batch has a mentor, they will connect with you all.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do all students have personal mentor?",
+    "answer": "Each batch has a mentor, they will connect with you all.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I speak to one of the instructors before enrolling?",
+    "answer": "Let me check if they are available.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I speak to one of the instructors before enrolling?",
+    "answer": "Let me check if they are available.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are the instructors available for 1-on-1 doubt-clearing sessions",
+    "answer": "Mostly they will help with you doubts",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are the instructors available for 1-on-1 doubt-clearing sessions",
+    "answer": "Mostly they will help with you doubts",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "What is the enrollment deadline",
+    "answer": "This month, because we'are planning to start the course next month.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "What is the enrollment deadline",
+    "answer": "This month, because we'are planning to start the course next month.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "What is the enrollment deadline",
+    "answer": "This month, because we'are planning to start the course next month.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I take both training and project simultaneously?",
+    "answer": "We have project batch if the students are aware of the course, so they can directly work on the project. And there's a guide for you.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I take both training and project simultaneously?",
+    "answer": "We have project batch if the students are aware of the course, so they can directly work on the project. And there's a guide for you.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I take both training and project simultaneously?",
+    "answer": "We have project batch if the students are aware of the course, so they can directly work on the project. And there's a guide for you.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "How often is the course content updated? Is it based on the latest industry trends?",
+    "answer": "Yes, we are doing in latest version, because our learning plaform mostly industry oriented",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "How often is the course content updated? Is it based on the latest industry trends?",
+    "answer": "Yes, we are doing in latest version, because our learning plaform mostly industry oriented",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "How often is the course content updated? Is it based on the latest industry trends?",
+    "answer": "Yes, we are doing in latest version, because our learning plaform mostly industry oriented",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are there any projects, case studies, or live assignments included in the training batch",
+    "answer": "Yes, multiple projects are included, and will provide assignmnets to improve yourselves",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are there any projects, case studies, or live assignments included in the training batch",
+    "answer": "Yes, multiple projects are included, and will provide assignmnets to improve yourselves",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are there any projects, case studies, or live assignments included in the training batch",
+    "answer": "Yes, multiple projects are included, and will provide assignmnets to improve yourselves",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I transfer to a different course if this one isn\u2019t right for me",
+    "answer": "Yeah, but it should be considered with the help of the mentor. And also done within one week.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I transfer to a different course if this one isn\u2019t right for me",
+    "answer": "Yeah, but it should be considered with the help of the mentor. And also done within one week.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do I need to take an entrance test or interview before joining",
+    "answer": "No, you don't",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do I need to take an entrance test or interview before joining",
+    "answer": "No, you don't",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "What documents do I need to submit",
+    "answer": "No need of documents",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can you hold a seat for me for 48 hours while I decide?",
+    "answer": "Yes but only 24 hours.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can you hold a seat for me for 48 hours while I decide?",
+    "answer": "Yes but only 24 hours.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is this course accredited or recognized by any official education body",
+    "answer": "No, it\u2019s a industry oriented organisation which comes under a parent company.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Will I receive a certificate at the end? If yes, who issues it?",
+    "answer": "Yes, you will get. It will issue by the company",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Will I receive a certificate at the end? If yes, who issues it?",
+    "answer": "Yes, you will get. It will issue by the company",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Will I receive a certificate at the end? If yes, who issues it?",
+    "answer": "Yes, you will get. It will issue by the company",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Certificate of completion/ experience certificate",
+    "answer": "Both will provided",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Certificate of completion/ experience certificate",
+    "answer": "Both will provided",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I see a sample certificate before enrolling",
+    "answer": "After the enrollment only, we provide that.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Monthly payment or one-time payment",
+    "answer": "Both are avilable",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "If the course is discontinued, will be the amount refunded.",
+    "answer": "No, we can't do that",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is there a discount if I pay the full amount upfront?",
+    "answer": "No",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is there a money-back guarantee or a trial period?",
+    "answer": "Basically no",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is total price included tax?",
+    "answer": "Yes",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "If the payment is missed, will the late fees or penalty apply",
+    "answer": "yes, we have. Its based how long the delay in payment.",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is there contract to be signed?",
+    "answer": "Yes, we have",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is there contract to be signed?",
+    "answer": "Yes, we have",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is there any registration fee to secure our seat, if yes will it be refunded if not joined",
+    "answer": "There is 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is there any registration fee to secure our seat, if yes will it be refunded if not joined",
+    "answer": "There is 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is there any registration fee to secure our seat, if yes will it be refunded if not joined",
+    "answer": "There is 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is there any registration fee to secure our seat, if yes will it be refunded if not joined",
+    "answer": "There is 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I sit in on one live session before registering",
+    "answer": "For that let me discuss with the mentor about the availability",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Can I sit in on one live session before registering",
+    "answer": "For that let me discuss with the mentor about the availability",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is you institution provide placement assistance?",
+    "answer": "Yes, we will support.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is you institution provide placement assistance?",
+    "answer": "Yes, we will support.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "The course period is over, but not placed, Will the organisation help the student to reach at a job position",
+    "answer": "We have placement support team, mostly our students will get placed. And we can only give assisstance in it, the interview session is purely handled by the canadiate",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "The course period is over, but not placed, Will the organisation help the student to reach at a job position",
+    "answer": "We have placement support team, mostly our students will get placed. And we can only give assisstance in it, the interview session is purely handled by the canadiate",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is there a career counselor who can help with my resume and interview prep",
+    "answer": "Yes, we provide complete placement support including resume building, mock interviews, aptitude preparation, LinkedIn profile optimization, and interview scheduling support until you become job-ready.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is there a career counselor who can help with my resume and interview prep",
+    "answer": "Yes, we provide complete placement support including resume building, mock interviews, aptitude preparation, LinkedIn profile optimization, and interview scheduling support until you become job-ready.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Mock interview provided or not, if yes how many mocks will be provided?",
+    "answer": "we've 3 mock interviews",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Mock interview provided or not, if yes how many mocks will be provided?",
+    "answer": "We've 3 mock interviews",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Mock interview provided or not, if yes how many mocks will be provided?",
+    "answer": "We've 3 mock interviews",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "How will I be assessed; quizzes, projects, final exam, or attendance?",
+    "answer": "Mostly on projects",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "How will I be assessed; quizzes, projects, final exam, or attendance?",
+    "answer": "Mostly on projects",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are exams online or in-person? Do I need to pay extra for exams?",
+    "answer": "No exams entirely, mostly all in the project handling, presentation.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are exams online or in-person? Do I need to pay extra for exams?",
+    "answer": "No exams entirely, mostly all in the project handling, presentation.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are exams online or in-person? Do I need to pay extra for exams?",
+    "answer": "No exams entirely, mostly all in the project handling, presentation.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Do you provide feedback on failed assignments so I can improve",
+    "answer": "Yes, we will support.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Science",
+    "question": "Are EMI options available?",
+    "answer": "es, EMI options are available to make learning affordable. You can pay in easy monthly installments without financial pressure.",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is placement guaranteed",
+    "answer": "We provide placement assistance, it is upto the student how they perform at tht interview.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Science",
+    "question": "Is placement guaranteed",
+    "answer": "We provide placement assistance, it is upto the student how they perform at tht interview.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is Agentic AI course?",
+    "answer": "Agentic AI is a 2-month practical training course by R2P Institution focused on building AI agents that can think, plan, and execute tasks automatically.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the average salary after moving into Agentic AI Career?",
+    "answer": "Starting salary usually ranges between \u20b98 LPA to \u20b915 LPA in India, while stronger candidates with real projects in LLMs, RAG, LangChain, LangGraph, CrewAI, AutoGen, and deployment skills can reach \u20b912\u201318 LPA or more in product-based companies and AI startups.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the average salary after moving into Agentic AI Career?",
+    "answer": "Starting salary usually ranges between \u20b98 LPA to \u20b915 LPA in India, while stronger candidates with real projects in LLMs, RAG, LangChain, LangGraph, CrewAI, AutoGen, and deployment skills can reach \u20b912\u201318 LPA or more in product-based companies and AI startups.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the duration of the course?",
+    "answer": "The course duration is 2 months with structured learning modules and hands-on projects.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the duration of the course?",
+    "answer": "The course duration is 2 months with structured learning modules and hands-on projects.",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the duration of the course?",
+    "answer": "The course duration is 2 months with structured learning modules and hands-on projects.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the duration of the course?",
+    "answer": "The course duration is 2 months with structured learning modules and hands-on projects.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the course fee?",
+    "answer": "The course fee is \u20b920,000 for the full program.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the course fee?",
+    "answer": "The course fee is \u20b920,000 for the full program.",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the course fee?",
+    "answer": "The course fee is \u20b920,000 for the full program.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the course fee?",
+    "answer": "The course fee is \u20b920,000 for the full program.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "EMI options",
+    "answer": "Can be paid 10000 initially included registration fee and the remaining can be paid second month 10000/-",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "EMI options",
+    "answer": "Can be paid 10000 initially included registration fee and the remaining can be paid second month 10000/-",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What will I learn in Agentic AI course?",
+    "answer": "You will learn AI agents, automation, LLMs, LangChain, LangGraph, RAG systems, and real-world AI applications.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What will I learn in Agentic AI course?",
+    "answer": "You will learn AI agents, automation, LLMs, LangChain, LangGraph, RAG systems, and real-world AI applications.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What will I learn in Agentic AI course?",
+    "answer": "You will learn AI agents, automation, LLMs, LangChain, LangGraph, RAG systems, and real-world AI applications.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the job scope after this course?",
+    "answer": "You can apply for AI/ML internships, junior AI developer roles, or build your own AI projects/startups.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the job scope after this course?",
+    "answer": "You can apply for AI/ML internships, junior AI developer roles, or build your own AI projects/startups.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the job scope after this course?",
+    "answer": "You can apply for AI/ML internships, junior AI developer roles, or build your own AI projects/startups.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "How long is each class, and how many classes per week?",
+    "answer": "Each class is usually 2 hours long. Normally, there are 3 classes per week depending on the batch type",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "How long is each class, and how many classes per week?",
+    "answer": "Each class is usually 2 hours long. Normally, there are 3 classes per week depending on the batch type",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "How long is each class, and how many classes per week?",
+    "answer": "Each class is usually 2 hours long. Normally, there are 3 classes per week depending on the batch type",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Maximum number of projects your organisation provided",
+    "answer": "We usually provide 8 to 12 hands-on projects, including mini projects and major capstone projects.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Maximum number of projects your organisation provided",
+    "answer": "We usually provide 8 to 12 hands-on projects, including mini projects and major capstone projects.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Maximum number of projects your organisation provided",
+    "answer": "We usually provide 8 to 12 hands-on projects, including mini projects and major capstone projects.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do you provide feedback on failed assignments so I can improve",
+    "answer": "Yes, absolutely. We provide detailed feedback on assignments and project submissions. Trainers explain mistakes, suggest improvements, and help students rework their tasks so they can improve their understanding and practical skills step by step.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do you provide feedback on failed assignments so I can improve",
+    "answer": "Yes, absolutely. We provide detailed feedback on assignments and project submissions. Trainers explain mistakes, suggest improvements, and help students rework their tasks so they can improve their understanding and practical skills step by step.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is coding compulsory for this course?",
+    "answer": "Basic coding is required because Data Science mainly works with Python programming.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "I am from a non-technical background, can I still learn this?",
+    "answer": "Yes, definitely. Many students from commerce, arts, management, and other non-technical backgrounds successfully move into Data Science.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "I am from a non-technical background, can I still learn this?",
+    "answer": "Yes, definitely. Many students from commerce, arts, management, and other non-technical backgrounds successfully move into Data Science.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do you provide real-time projects?",
+    "answer": "Yes, we provide real-time industry-based projects so students gain practical exposure. These projects help build strong portfolios and improve confidence during interviews.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do you provide real-time projects?",
+    "answer": "Yes, we provide real-time industry-based projects so students gain practical exposure. These projects help build strong portfolios and improve confidence during interviews.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do you provide real-time projects?",
+    "answer": "Yes, we provide real-time industry-based projects so students gain practical exposure. These projects help build strong portfolios and improve confidence during interviews.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What other courses did you provide",
+    "answer": "In total, we are providing Data anlytics, Data Science, Agentic AI and some add-on courses Gen AI, Prompt Engineering",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What other courses did you provide",
+    "answer": "In total, we are providing Data anlytics, Data Science, Agentic AI and some add-on courses Gen AI, Prompt Engineering",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What other courses did you provide",
+    "answer": "In total, we are providing Data anlytics, Data Science, Agentic AI and some add-on courses Gen AI, Prompt Engineering",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is the course online/ offline or can we try hybrid?",
+    "answer": "Its according to your prefernce, the session held in 3 days for 2 hours. And the soft skill session will add among them.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is the course online/ offline or can we try hybrid?",
+    "answer": "Its according to your prefernce, the session held in 3 days for 2 hours. And the soft skill session will add among them.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is the course online/ offline or can we try hybrid?",
+    "answer": "Its according to your prefernce, the session held in 3 days for 2 hours. And the soft skill session will add among them.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What technical support is available if I face issues with the online platform?",
+    "answer": "Our technical team is always here, they will support you if face any issues.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What technical support is available if I face issues with the online platform?",
+    "answer": "Our technical team is always here, they will support you if face any issues.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What technical support is available if I face issues with the online platform?",
+    "answer": "Our technical team is always here, they will support you if face any issues.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are classes live or pre-recorded?",
+    "answer": "Mostly in live classes, No recordings provided.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are classes live or pre-recorded?",
+    "answer": "Mostly in live classes, No recordings provided.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What are the exact timings?",
+    "answer": "09.30 AM - 5.30 PM, The classess scheduled may be at forenoon or afternoon for 2 hours. It will inform you earlier.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What are the exact timings?",
+    "answer": "09.30 AM - 5.30 PM, The classess scheduled may be at forenoon or afternoon for 2 hours. It will inform you earlier.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do you offer weekend or evening batches?",
+    "answer": "No weekend classes and evening batch.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do you offer weekend or evening batches?",
+    "answer": "No weekend classes and evening batch.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I switch between batches if my schedule changes later",
+    "answer": "It can't be tell now, its according to the mentor's response",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I switch between batches if my schedule changes later",
+    "answer": "It can't be tell now, its according to the mentor's response",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Combo Courses available or not",
+    "answer": "Yes, Data science + agentic AI for 6 month with a fee os 50000/-",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Combo Courses available or not",
+    "answer": "Yes, Data science + agentic AI for 6 month with a fee os 50000/-",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Combo Courses available or not",
+    "answer": "Yes, Data science + agentic AI for 6 month with a fee os 50000/-",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Did the course include only technical version sessions or will be there the soft skill session?",
+    "answer": "Both are avilable",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Did the course include only technical version sessions or will be there the soft skill session?",
+    "answer": "Both are avilable",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What\u2019s all include in soft skill session?",
+    "answer": "Linkedin optimaization, GD, personalty development, personalty development,aptitude preparation, LinkedIn profile optimization mock interviews, resume buliding like etc.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What\u2019s all include in soft skill session?",
+    "answer": "Linkedin optimaization, GD, personalty development, personalty development,aptitude preparation, LinkedIn profile optimization mock interviews, resume buliding like etc.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Will you provide the system to work?",
+    "answer": "No, the student must work on their laptop",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Will you provide the system to work?",
+    "answer": "No, the student must work on their laptop",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do all students have personal mentor?",
+    "answer": "Each batch has a mentor, they will connect with you all.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do all students have personal mentor?",
+    "answer": "Each batch has a mentor, they will connect with you all.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I speak to one of the instructors before enrolling?",
+    "answer": "Let me check if they are available.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I speak to one of the instructors before enrolling?",
+    "answer": "Let me check if they are available.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are the instructors available for 1-on-1 doubt-clearing sessions",
+    "answer": "Mostly they will help with you doubts",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are the instructors available for 1-on-1 doubt-clearing sessions",
+    "answer": "Mostly they will help with you doubts",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the enrollment deadline",
+    "answer": "This month, because we'are planning to start the course next month.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the enrollment deadline",
+    "answer": "This month, because we'are planning to start the course next month.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What is the enrollment deadline",
+    "answer": "This month, because we'are planning to start the course next month.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I take both training and project simultaneously?",
+    "answer": "We have project batch if the students are aware of the course, so they can directly work on the project. And there's a guide for you.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I take both training and project simultaneously?",
+    "answer": "We have project batch if the students are aware of the course, so they can directly work on the project. And there's a guide for you.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I take both training and project simultaneously?",
+    "answer": "We have project batch if the students are aware of the course, so they can directly work on the project. And there's a guide for you.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "How often is the course content updated? Is it based on the latest industry trends?",
+    "answer": "Yes, we are doing in latest version, because our learning plaform mostly industry oriented",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "How often is the course content updated? Is it based on the latest industry trends?",
+    "answer": "Yes, we are doing in latest version, because our learning plaform mostly industry oriented",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "How often is the course content updated? Is it based on the latest industry trends?",
+    "answer": "Yes, we are doing in latest version, because our learning plaform mostly industry oriented",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are there any projects, case studies, or live assignments included in the training batch",
+    "answer": "Yes, multiple projects are included, and will provide assignmnets to improve yourselves",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are there any projects, case studies, or live assignments included in the training batch",
+    "answer": "Yes, multiple projects are included, and will provide assignmnets to improve yourselves",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are there any projects, case studies, or live assignments included in the training batch",
+    "answer": "Yes, multiple projects are included, and will provide assignmnets to improve yourselves",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I transfer to a different course if this one isn\u2019t right for me",
+    "answer": "Yeah, but it should be considered with the help of the mentor. And also done within one week.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I transfer to a different course if this one isn\u2019t right for me",
+    "answer": "Yeah, but it should be considered with the help of the mentor. And also done within one week.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do I need to take an entrance test or interview before joining",
+    "answer": "No, you don't",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do I need to take an entrance test or interview before joining",
+    "answer": "No, you don't",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "What documents do I need to submit",
+    "answer": "No need of documents",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can you hold a seat for me for 48 hours while I decide?",
+    "answer": "Yes but only 24 hours.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can you hold a seat for me for 48 hours while I decide?",
+    "answer": "Yes but only 24 hours.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is this course accredited or recognized by any official education body",
+    "answer": "No, it\u2019s a industry oriented organisation which comes under a parent company.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Will I receive a certificate at the end? If yes, who issues it?",
+    "answer": "Yes, you will get. It will issue by the company",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Will I receive a certificate at the end? If yes, who issues it?",
+    "answer": "Yes, you will get. It will issue by the company",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Will I receive a certificate at the end? If yes, who issues it?",
+    "answer": "Yes, you will get. It will issue by the company",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Certificate of completion/ experience certificate",
+    "answer": "Both will provided",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Certificate of completion/ experience certificate",
+    "answer": "Both will provided",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I see a sample certificate before enrolling",
+    "answer": "After the enrollment only, we provide that.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Monthly payment or one-time payment",
+    "answer": "Both are avilable",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "If the course is discontinued, will be the amount refunded.",
+    "answer": "No, we can't do that",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is there a discount if I pay the full amount upfront?",
+    "answer": "No",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is there a money-back guarantee or a trial period?",
+    "answer": "Basically no",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is total price included tax?",
+    "answer": "Yes",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "If the payment is missed, will the late fees or penalty apply",
+    "answer": "yes, we have. Its based how long the delay in payment.",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is there contract to be signed?",
+    "answer": "Yes, we have",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is there contract to be signed?",
+    "answer": "Yes, we have",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is there any registration fee to secure our seat, if yes will it be refunded if not joined",
+    "answer": "There is 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is there any registration fee to secure our seat, if yes will it be refunded if not joined",
+    "answer": "There is 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is there any registration fee to secure our seat, if yes will it be refunded if not joined",
+    "answer": "There is 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is there any registration fee to secure our seat, if yes will it be refunded if not joined",
+    "answer": "There is 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I sit in on one live session before registering",
+    "answer": "For that let me discuss with the mentor about the availability",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Can I sit in on one live session before registering",
+    "answer": "For that let me discuss with the mentor about the availability",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is you institution provide placement assistance?",
+    "answer": "Yes, we will support.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is you institution provide placement assistance?",
+    "answer": "Yes, we will support.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "The course period is over, but not placed, Will the organisation help the student to reach at a job position",
+    "answer": "We have placement support team, mostly our students will get placed. And we can only give assisstance in it, the interview session is purely handled by the canadiate",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "The course period is over, but not placed, Will the organisation help the student to reach at a job position",
+    "answer": "We have placement support team, mostly our students will get placed. And we can only give assisstance in it, the interview session is purely handled by the canadiate",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is there a career counselor who can help with my resume and interview prep",
+    "answer": "Yes, we provide complete placement support including resume building, mock interviews, aptitude preparation, LinkedIn profile optimization, and interview scheduling support until you become job-ready.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is there a career counselor who can help with my resume and interview prep",
+    "answer": "Yes, we provide complete placement support including resume building, mock interviews, aptitude preparation, LinkedIn profile optimization, and interview scheduling support until you become job-ready.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Mock interview provided or not, if yes how many mocks will be provided?",
+    "answer": "we've 3 mock interviews",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Mock interview provided or not, if yes how many mocks will be provided?",
+    "answer": "We've 3 mock interviews",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Mock interview provided or not, if yes how many mocks will be provided?",
+    "answer": "We've 3 mock interviews",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "How will I be assessed; quizzes, projects, final exam, or attendance?",
+    "answer": "Mostly on projects",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "How will I be assessed; quizzes, projects, final exam, or attendance?",
+    "answer": "Mostly on projects",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are exams online or in-person? Do I need to pay extra for exams?",
+    "answer": "No exams entirely, mostly all in the project handling, presentation.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are exams online or in-person? Do I need to pay extra for exams?",
+    "answer": "No exams entirely, mostly all in the project handling, presentation.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are exams online or in-person? Do I need to pay extra for exams?",
+    "answer": "No exams entirely, mostly all in the project handling, presentation.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Do you provide feedback on failed assignments so I can improve",
+    "answer": "Yes, we will support.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Are EMI options available?",
+    "answer": "es, EMI options are available to make learning affordable. You can pay in easy monthly installments without financial pressure.",
+    "persona": "Price"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is placement guaranteed",
+    "answer": "We provide placement assistance, it is upto the student how they perform at tht interview.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Agentic AI",
+    "question": "Is placement guaranteed",
+    "answer": "We provide placement assistance, it is upto the student how they perform at tht interview.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What is Data Analytics actually?",
+    "answer": "Data Analytics is the process of collecting, cleaning, analyzing, and interpreting data to help businesses make better decisions. It focuses on understanding patterns, trends, and insights from data using tools like Excel, SQL, Power BI, Tableau, and Python.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What would be the duration of the course?",
+    "answer": "The course duration is usually around 4 months, depending on the learning mode you choose. It includes both theoretical learning and practical project work.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What would be the duration of the course?",
+    "answer": "The course duration is usually around 4 months, depending on the learning mode you choose. It includes both theoretical learning and practical project work.",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What would be the duration of the course?",
+    "answer": "The course duration is usually around 4 months, depending on the learning mode you choose. It includes both theoretical learning and practical project work.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What would be the duration of the course?",
+    "answer": "The course duration is usually around 4 months, depending on the learning mode you choose. It includes both theoretical learning and practical project work.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What was the detailed syllabus of the course or the weekly breakdown of topics",
+    "answer": "The syllabus starts with Excel fundamentals, advanced Excel, SQL for database handling, statistics basics, Power BI, Tableau, Python basics for analytics, data cleaning, dashboard creation, business reporting, and real-time analytics projects. Resume preparation, interview training, and placement support are also included.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What was the detailed syllabus of the course or the weekly breakdown of topics",
+    "answer": "The syllabus starts with Excel fundamentals, advanced Excel, SQL for database handling, statistics basics, Power BI, Tableau, Python basics for analytics, data cleaning, dashboard creation, business reporting, and real-time analytics projects. Resume preparation, interview training, and placement support are also included.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What was the detailed syllabus of the course or the weekly breakdown of topics",
+    "answer": "The syllabus starts with Excel fundamentals, advanced Excel, SQL for database handling, statistics basics, Power BI, Tableau, Python basics for analytics, data cleaning, dashboard creation, business reporting, and real-time analytics projects. Resume preparation, interview training, and placement support are also included.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What specific software, tools include in the course?",
+    "answer": "The course includes Microsoft Excel, Advanced Excel, SQL, MySQL, Power BI, Tableau, Python basics, Google Sheets, business reporting tools, dashboard creation tools, and GitHub for project portfolio building.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What specific software, tools include in the course?",
+    "answer": "The course includes Microsoft Excel, Advanced Excel, SQL, MySQL, Power BI, Tableau, Python basics, Google Sheets, business reporting tools, dashboard creation tools, and GitHub for project portfolio building.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What specific software, tools include in the course?",
+    "answer": "The course includes Microsoft Excel, Advanced Excel, SQL, MySQL, Power BI, Tableau, Python basics, Google Sheets, business reporting tools, dashboard creation tools, and GitHub for project portfolio building.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Course fee structure",
+    "answer": "The total course fee is approximately \u20b935,000, EMI options are available.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Course fee structure",
+    "answer": "The total course fee is approximately \u20b935,000, EMI options are available.",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Course fee structure",
+    "answer": "The total course fee is approximately \u20b935,000, EMI options are available.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Course fee structure",
+    "answer": "The total course fee is approximately \u20b935,000, EMI options are available.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "EMI options",
+    "answer": "Can be paid 15000 initially included registration fee and the remaining can be paid second month 10000/-",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "EMI options",
+    "answer": "Can be paid 15000 initially included registration fee and the remaining can be paid second month 10000/-",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What are the Positions comes under this Course?",
+    "answer": "Students can apply for roles like Data Analyst, Business Analyst, Reporting Analyst, MIS Executive, Power BI Developer, Tableau Developer, SQL Analyst, and Junior Analytics Consultant depending on their skills and projects.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What are the Positions comes under this Course?",
+    "answer": "Students can apply for roles like Data Analyst, Business Analyst, Reporting Analyst, MIS Executive, Power BI Developer, Tableau Developer, SQL Analyst, and Junior Analytics Consultant depending on their skills and projects.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What are the Positions comes under this Course?",
+    "answer": "Students can apply for roles like Data Analyst, Business Analyst, Reporting Analyst, MIS Executive, Power BI Developer, Tableau Developer, SQL Analyst, and Junior Analytics Consultant depending on their skills and projects.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What is the average salary after moving into Data Analytics Career",
+    "answer": "Freshers usually start with an average salary of around \u20b93 LPA to \u20b95.5 LPA depending on skills, projects, and company type. With strong dashboard and SQL skills, growth opportunities become much faster.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What is the average salary after moving into Data Analytics Career",
+    "answer": "Freshers usually start with an average salary of around \u20b93 LPA to \u20b95.5 LPA depending on skills, projects, and company type. With strong dashboard and SQL skills, growth opportunities become much faster.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What is the average salary after moving into Data Analytics Career",
+    "answer": "Freshers usually start with an average salary of around \u20b93 LPA to \u20b95.5 LPA depending on skills, projects, and company type. With strong dashboard and SQL skills, growth opportunities become much faster.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is math included in Data Analytics?",
+    "answer": "Yes, but only basic mathematics and statistics are required. Concepts like percentages, averages, trends, probability basics, and simple statistics are taught in an easy practical way for business decision-making.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is math included in Data Analytics?",
+    "answer": "Yes, but only basic mathematics and statistics are required. Concepts like percentages, averages, trends, probability basics, and simple statistics are taught in an easy practical way for business decision-making.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Will this help me switch my career to IT?",
+    "answer": "Yes, Data Analytics is a very strong career-switching option into IT and corporate roles.",
+    "persona": "Career-oreinted"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Will this help me switch my career to IT?",
+    "answer": "Yes, Data Analytics is a very strong career-switching option into IT and corporate roles.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "How long is each class, and how many classes per week?",
+    "answer": "Each class is usually 2 hours long. Normally, there are 3 classes per week depending on the batch type",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "How long is each class, and how many classes per week?",
+    "answer": "Each class is usually 2 hours long. Normally, there are 3 classes per week depending on the batch type",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "How long is each class, and how many classes per week?",
+    "answer": "Each class is usually 2 hours long. Normally, there are 3 classes per week depending on the batch type",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Maximum number of projects your organisation provided",
+    "answer": "We usually provide 8 to 12 hands-on projects, including mini projects and major capstone projects.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Maximum number of projects your organisation provided",
+    "answer": "We usually provide 8 to 12 hands-on projects, including mini projects and major capstone projects.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Maximum number of projects your organisation provided",
+    "answer": "We usually provide 8 to 12 hands-on projects, including mini projects and major capstone projects.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do you provide feedback on failed assignments so I can improve",
+    "answer": "Yes, absolutely. We provide detailed feedback on assignments and project submissions. Trainers explain mistakes, suggest improvements, and help students rework their tasks so they can improve their understanding and practical skills step by step.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do you provide feedback on failed assignments so I can improve",
+    "answer": "Yes, absolutely. We provide detailed feedback on assignments and project submissions. Trainers explain mistakes, suggest improvements, and help students rework their tasks so they can improve their understanding and practical skills step by step.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is coding compulsory for this course?",
+    "answer": "Basic coding is required because Data Science mainly works with Python programming.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "I am from a non-technical background, can I still learn this?",
+    "answer": "Yes, definitely. Many students from commerce, arts, management, and other non-technical backgrounds successfully move into Data Science.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "I am from a non-technical background, can I still learn this?",
+    "answer": "Yes, definitely. Many students from commerce, arts, management, and other non-technical backgrounds successfully move into Data Science.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do you provide real-time projects?",
+    "answer": "Yes, we provide real-time industry-based projects so students gain practical exposure. These projects help build strong portfolios and improve confidence during interviews.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do you provide real-time projects?",
+    "answer": "Yes, we provide real-time industry-based projects so students gain practical exposure. These projects help build strong portfolios and improve confidence during interviews.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do you provide real-time projects?",
+    "answer": "Yes, we provide real-time industry-based projects so students gain practical exposure. These projects help build strong portfolios and improve confidence during interviews.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What other courses did you provide",
+    "answer": "In total, we are providing Data anlytics, Data Science, Agentic AI and some add-on courses Gen AI, Prompt Engineering",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What other courses did you provide",
+    "answer": "In total, we are providing Data anlytics, Data Science, Agentic AI and some add-on courses Gen AI, Prompt Engineering",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What other courses did you provide",
+    "answer": "In total, we are providing Data anlytics, Data Science, Agentic AI and some add-on courses Gen AI, Prompt Engineering",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is the course online/ offline or can we try hybrid?",
+    "answer": "Its according to your prefernce, the session held in 3 days for 2 hours. And the soft skill session will add among them.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is the course online/ offline or can we try hybrid?",
+    "answer": "Its according to your prefernce, the session held in 3 days for 2 hours. And the soft skill session will add among them.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is the course online/ offline or can we try hybrid?",
+    "answer": "Its according to your prefernce, the session held in 3 days for 2 hours. And the soft skill session will add among them.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What technical support is available if I face issues with the online platform?",
+    "answer": "Our technical team is always here, they will support you if face any issues.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What technical support is available if I face issues with the online platform?",
+    "answer": "Our technical team is always here, they will support you if face any issues.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What technical support is available if I face issues with the online platform?",
+    "answer": "Our technical team is always here, they will support you if face any issues.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are classes live or pre-recorded?",
+    "answer": "Mostly in live classes, No recordings provided.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are classes live or pre-recorded?",
+    "answer": "Mostly in live classes, No recordings provided.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What are the exact timings?",
+    "answer": "09.30 AM - 5.30 PM, The classess scheduled may be at forenoon or afternoon for 2 hours. It will inform you earlier.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What are the exact timings?",
+    "answer": "09.30 AM - 5.30 PM, The classess scheduled may be at forenoon or afternoon for 2 hours. It will inform you earlier.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do you offer weekend or evening batches?",
+    "answer": "No weekend classes and evening batch.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do you offer weekend or evening batches?",
+    "answer": "No weekend classes and evening batch.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I switch between batches if my schedule changes later",
+    "answer": "It can't be tell now, its according to the mentor's response",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I switch between batches if my schedule changes later",
+    "answer": "It can't be tell now, its according to the mentor's response",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Combo Courses available or not",
+    "answer": "Yes, Data science + agentic AI for 6 month with a fee os 50000/-",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Combo Courses available or not",
+    "answer": "Yes, Data science + agentic AI for 6 month with a fee os 50000/-",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Combo Courses available or not",
+    "answer": "Yes, Data science + agentic AI for 6 month with a fee os 50000/-",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Did the course include only technical version sessions or will be there the soft skill session?",
+    "answer": "Both are avilable",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Did the course include only technical version sessions or will be there the soft skill session?",
+    "answer": "Both are avilable",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What\u2019s all include in soft skill session?",
+    "answer": "Linkedin optimaization, GD, personalty development, personalty development,aptitude preparation, LinkedIn profile optimization mock interviews, resume buliding like etc.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What\u2019s all include in soft skill session?",
+    "answer": "Linkedin optimaization, GD, personalty development, personalty development,aptitude preparation, LinkedIn profile optimization mock interviews, resume buliding like etc.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Will you provide the system to work?",
+    "answer": "No, the student must work on their laptop",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Will you provide the system to work?",
+    "answer": "No, the student must work on their laptop",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do all students have personal mentor?",
+    "answer": "Each batch has a mentor, they will connect with you all.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do all students have personal mentor?",
+    "answer": "Each batch has a mentor, they will connect with you all.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I speak to one of the instructors before enrolling?",
+    "answer": "Let me check if they are available.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I speak to one of the instructors before enrolling?",
+    "answer": "Let me check if they are available.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are the instructors available for 1-on-1 doubt-clearing sessions",
+    "answer": "Mostly they will help with you doubts",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are the instructors available for 1-on-1 doubt-clearing sessions",
+    "answer": "Mostly they will help with you doubts",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What is the enrollment deadline",
+    "answer": "This month, because we'are planning to start the course next month.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What is the enrollment deadline",
+    "answer": "This month, because we'are planning to start the course next month.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What is the enrollment deadline",
+    "answer": "This month, because we'are planning to start the course next month.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "When will be course started?",
+    "answer": "Next Month",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I take both training and project simultaneously?",
+    "answer": "We have project batch if the students are aware of the course, so they can directly work on the project. And there's a guide for you.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I take both training and project simultaneously?",
+    "answer": "We have project batch if the students are aware of the course, so they can directly work on the project. And there's a guide for you.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I take both training and project simultaneously?",
+    "answer": "We have project batch if the students are aware of the course, so they can directly work on the project. And there's a guide for you.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "How often is the course content updated? Is it based on the latest industry trends?",
+    "answer": "Yes, we are doing in latest version, because our learning plaform mostly industry oriented",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "How often is the course content updated? Is it based on the latest industry trends?",
+    "answer": "Yes, we are doing in latest version, because our learning plaform mostly industry oriented",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "How often is the course content updated? Is it based on the latest industry trends?",
+    "answer": "Yes, we are doing in latest version, because our learning plaform mostly industry oriented",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are there any projects, case studies, or live assignments included in the training batch",
+    "answer": "Yes, multiple projects are included, and will provide assignmnets to improve yourselves",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are there any projects, case studies, or live assignments included in the training batch",
+    "answer": "Yes, multiple projects are included, and will provide assignmnets to improve yourselves",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are there any projects, case studies, or live assignments included in the training batch",
+    "answer": "Yes, multiple projects are included, and will provide assignmnets to improve yourselves",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I transfer to a different course if this one isn\u2019t right for me",
+    "answer": "Yeah, but it should be considered with the help of the mentor. And also done within one week.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I transfer to a different course if this one isn\u2019t right for me",
+    "answer": "Yeah, but it should be considered with the help of the mentor. And also done within one week.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do I need to take an entrance test or interview before joining",
+    "answer": "No, you don't",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do I need to take an entrance test or interview before joining",
+    "answer": "No, you don't",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "What documents do I need to submit",
+    "answer": "No need of documents",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can you hold a seat for me for 48 hours while I decide?",
+    "answer": "Yes but only 24 hours.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can you hold a seat for me for 48 hours while I decide?",
+    "answer": "Yes but only 24 hours.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is this course accredited or recognized by any official education body",
+    "answer": "No, it\u2019s an industry-oriented organisation which comes under a parent company.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Will I receive a certificate at the end? If yes, who issues it?",
+    "answer": "Yes, you will get. It will be issued by the company.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Will I receive a certificate at the end? If yes, who issues it?",
+    "answer": "Yes, you will get it. It will be issued by the company.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Will I receive a certificate at the end? If yes, who issues it?",
+    "answer": "Yes, you will get it. It will be issued by the company.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Certificate of completion/ experience certificate",
+    "answer": "Both will be provided",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Certificate of completion/ experience certificate",
+    "answer": "Both will be provided",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I see a sample certificate before enrolling?",
+    "answer": "After the enrollment only, we provide that.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Monthly payment or one-time payment",
+    "answer": "Both are available",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "If the course is discontinued, will the amount be refunded?",
+    "answer": "No, we can't do that",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is there a discount if I pay the full amount upfront?",
+    "answer": "No",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is there a money-back guarantee or a trial period?",
+    "answer": "Basically no",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is the total price inclusive of tax?",
+    "answer": "Yes",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "If the payment is missed, will the late fees or penalty apply?"
+    "answer": "yes, we have. It's based on how long the delay in payment.",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is there a contract to be signed?",
+    "answer": "Yes, we have",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is there a contract to be signed?",
+    "answer": "Yes, we have",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is there any registration fee to secure our seat, if yes will it be refunded if not joined",
+    "answer": "There are 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is there any registration fee to secure our seat, if yes, will it be refunded if not join?",
+    "answer": "There are 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is there any registration fee to secure our seat, if yes, will it be refunded if not join?",
+    "answer": "There are 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is there any registration fee to secure our seat, if yes, will it be refunded if not join?",
+    "answer": "There are 2000 rupees for registration and will not be refunded in any case",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I sit in on one live session before registering?",
+    "answer": "For that, let me discuss with the mentor about the availability",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Can I sit in on one live session before registering?",
+    "answer": "For that, let me discuss with the mentor about the availability",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is you institution provide placement assistance?",
+    "answer": "Yes, we will support.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is you institution provide placement assistance?",
+    "answer": "Yes, we will support.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "The course period is over, but not been placed. Will the organisation help the student to reach a job position?"
+    "answer": "We have a placement support team, and mostly our students will get placed. And we can only assist in it; the interview session is purely handled by the candidate.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "The course period is over, but not been placed. Will the organisation help the student to reach a job position?"
+    "answer": "We have a placement support team, and mostly our students will get placed. And we can only assist in it; the interview session is purely handled by the candidate."
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is there a career counselor who can help with my resume and interview prep?",
+    "answer": "Yes, we provide complete placement support, including resume building, mock interviews, aptitude preparation, LinkedIn profile optimization, and interview scheduling support until you become job-ready.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is there a career counselor who can help with my resume and interview prep?",
+    "answer": "Yes, we provide complete placement support, including resume building, mock interviews, aptitude preparation, LinkedIn profile optimization, and interview scheduling support until you become job-ready.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Mock interview provided or not, if yes, how many mocks will be provided?",
+    "answer": "we've 3 mock interviews",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Mock interview provided or not, if yes, how many mocks will be provided?",
+    "answer": "We've 3 mock interviews",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Mock interview provided or not, if yes, how many mocks will be provided?",
+    "answer": "We've 3 mock interviews",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "How will I be assessed: quizzes, projects, final exam, or attendance?",
+    "answer": "Mostly on projects",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "How will I be assessed: quizzes, projects, final exam, or attendance?",
+    "answer": "Mostly on projects",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are exams online or in-person? Do I need to pay extra for exams?"
+    "answer": "No exams entirely, mostly all in the project handling, presentation.",
+    "persona": "Career-oriented"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are exams online or in-person? Do I need to pay extra for exams?"
+    "answer": "No exams entirely, mostly all in the project handling, presentation.",
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are exams online or in-person? Do I need to pay extra for exams?"
+    "answer": "No exams entirely, mostly all in the project handling, presentation.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Do you provide feedback on failed assignments so I can improve?",
+    "answer": "Yes, we will support.",
+    "persona": "Skeptical"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Are EMI options available?",
+    "answer": "Yes, EMI options are available to make learning affordable. You can pay in easy monthly installments without financial pressure."
+    "persona": "Price"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is placement guaranteed",
+    "answer": "We provide placement assistance; it is up to the student how they perform at that interview."
+    "persona": "Beginner"
+  },
+  {
+    "course": "Data Analytics",
+    "question": "Is placement guaranteed",
+    "answer": "We provide placement assistance; it is up to the student how they perform at that interview."
+    "persona": "Career-oriented"
+  }
+]
