@@ -1,7 +1,5 @@
-from ai_logic.chatbot import get_response
 from ai_logic.voice import speak, listen
-
-history = []
+from ai_logic.chatbot import get_response
 
 print("🎤 Voice AI started (type 'exit' to stop)\n")
 
@@ -16,9 +14,6 @@ while True:
         speak("Goodbye!")
         break
 
-    response = get_response(user_input, "student", history)
-
-    history.append(("user", user_input))
-    history.append(("ai", response))
+    response = get_response(user_input)
 
     speak(response)

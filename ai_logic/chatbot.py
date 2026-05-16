@@ -1,80 +1,132 @@
 import random
-from ai_logic.memory import update_memory, get_context
 
-def get_response(user_message, persona, history):
+def get_response(user_message):
 
-    msg = user_message.lower().strip()
+    msg = user_message.lower()
 
-    if any(word in msg for word in ["hi", "hello", "hey"]):
-        reply = random.choice([
-            "Hey! I'm actually looking for a course. Can you help me?",
-            "Hi! I'm a bit confused about which course to choose.",
-            "Hey! I want to learn something new but not sure where to start."
-        ])
+    responses = {
 
-        update_memory(history, user_message, reply)
-        return reply
+        "hello": [
+            "Hey! Nice to meet you.",
+            "Hello! Can you guide me about your courses?",
+            "Hi! I'm looking for a good tech course."
+        ],
 
-    if "background" in msg:
-        reply = random.choice([
-            "I'm actually from a non-technical background.",
-            "I'm a beginner. I haven’t done coding before.",
-            "I’m just starting out in tech."
-        ])
+        "hi": [
+            "Hi there!",
+            "Hey! I want to build my career in tech.",
+            "Hello! Which course is best for beginners?"
+        ],
 
-        update_memory(history, user_message, reply)
-        return reply
+        "data science": [
+            "I've heard Data Science has good salary opportunities. Is coding difficult?",
+            "Will I get real projects in Data Science?",
+            "Do beginners struggle in Data Science?",
+            "Do I need strong math for Data Science?"
+        ],
 
-    if "data science" in msg:
-        reply = """
-I’ve heard Data Science is really popular.
+        "data analytics": [
+            "Is Data Analytics easier than Data Science?",
+            "Will I learn Excel, Power BI, and dashboards?",
+            "Can beginners get jobs quickly in Data Analytics?",
+            "Do companies still hire Data Analysts?"
+        ],
 
-But I have doubts:
+        "agentic ai": [
+            "Agentic AI sounds futuristic. Is it beginner friendly?",
+            "Will I learn AI agents and automation?",
+            "Is Agentic AI related to ChatGPT and LLMs?",
+            "Do I need Python before learning Agentic AI?"
+        ],
 
-• Is coding difficult?
-• Do I need strong math?
-• Will I get real projects?
+        "artificial intelligence": [
+            "Artificial Intelligence sounds interesting.",
+            "Is AI difficult for beginners?",
+            "Do I need Python before learning AI?",
+            "Will AI have good career opportunities in the future?"
+        ],
 
-Can you explain simply?
-"""
-        update_memory(history, user_message, reply)
-        return reply
+        "machine learning": [
+            "Is Machine Learning hard to understand?",
+            "Will I build real AI models in this course?",
+            "Do beginners learn Machine Learning easily?",
+            "Is coding compulsory for Machine Learning?"
+        ],
 
-    if "data analytics" in msg:
-        reply = """
-Data Analytics sounds interesting.
+        "python": [
+            "Is Python easy to learn?",
+            "How long does it take to learn Python?",
+            "Will Python help me get a job?",
+            "Do complete beginners struggle with Python?"
+        ],
 
-But I want to know:
+        "job": [
+            "Will I get placement support?",
+            "Are there internship opportunities?",
+            "What kind of salary can freshers expect?",
+            "Which companies hire students from this course?"
+        ],
 
-• Is it easier than Data Science?
-• Will I learn dashboards and Excel?
-• Can beginners get jobs quickly?
+        "fees": [
+            "Can I pay the fees in installments?",
+            "Is there any scholarship available?",
+            "What is the total course fee?",
+            "Do you have EMI options?"
+        ],
 
-What do you think?
-"""
-        update_memory(history, user_message, reply)
-        return reply
+        "placement": [
+            "Do you provide placement training?",
+            "Which companies hire students?",
+            "What is the placement success rate?",
+            "Will I get interview preparation support?"
+        ],
 
-    if "agentic ai" in msg or "ai" in msg:
-        reply = """
-Agentic AI sounds futuristic.
+        "duration": [
+            "How many months is the course?",
+            "Is the course flexible for working students?",
+            "Do you provide recorded classes?",
+            "How many hours per week should I study?"
+        ],
 
-But honestly:
+        "projects": [
+            "Will I work on real-world projects?",
+            "Do students build portfolio projects?",
+            "Will projects help during placements?",
+            "Can I add these projects to my resume?"
+        ],
 
-• Is it too advanced?
-• Do I need Python?
-• Is this related to ChatGPT?
+        "internship": [
+            "Do you provide internships after training?",
+            "Are internships paid or unpaid?",
+            "Will internships help me get jobs?",
+            "Do beginners get internship opportunities?"
+        ]
+    }
 
-Can beginners learn this?
-"""
-        update_memory(history, user_message, reply)
-        return reply
+    for keyword, reply_list in responses.items():
 
-    reply = """
-I'm still confused about which course is best for me.
+        words = keyword.split()
 
-Can you guide me like a beginner?
-"""
+        if any(word in msg for word in words):
+            return random.choice(reply_list)
 
-    update_memory(history, user_message, reply)
-    return reply
+    default_responses = [
+
+        "Can you explain that a little more?",
+
+        "I'm still learning about tech careers.",
+
+        "Which course would you personally recommend?",
+
+        "Can beginners really learn this easily?",
+
+        "What makes your institute different from others?",
+
+        "Do students get real projects here?",
+
+        "Will this course help me get a tech job?",
+
+        "I'm confused between Data Science and Data Analytics."
+    ]
+
+    return random.choice(default_responses)
