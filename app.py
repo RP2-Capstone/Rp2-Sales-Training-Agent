@@ -1,97 +1,81 @@
+
 import streamlit as st
-import time
-from services.api_client import get_ai_response
+from streamlit_mic_recorder import speech_to_text
+from services.api_client import get_ai_response, get_final_feedback
 from frontend_logic.persona_config import PERSONAS, COURSES
 
-# 1. PAGE CONFIGURATION
+# Page Config
 st.set_page_config(page_title="RP2 AI Sales Trainer", layout="wide", page_icon="🛡️")
 
-# 2. PROFESSIONAL HEADER
-st.markdown("""
-    <div style="background-color: #1E3A8A; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
-        <h1 style="color: white; text-align: center; margin: 0;">🛡️ RP2 Sales Training - Professional Edition</h1>
-    </div>
-""", unsafe_allow_html=True)
+# Session State Initialization
+if "messages" not in st.session_state: st.session_state.messages = []
+if "history" not in st.session_state: st.session_state.history = ""
+if "mic_counter" not in st.session_state: st.session_state.mic_counter = 0
 
-# 3. SIDEBAR: CONFIGURATION
-st.sidebar.header("Configuration")
-selected_p_name = st.sidebar.selectbox("Select Persona:", list(PERSONAS.keys()))
-selected_course = st.sidebar.selectbox("Choose Course:", COURSES)
+# Sidebar
+with st.sidebar:
+    st.header("Configuration")
+    selected_p_name = st.selectbox("Select Persona:", list(PERSONAS.keys()))
+    selected_course = st.selectbox("Choose Course:", COURSES)
+    if st.button("🗑️ Clear Chat History"):
+        st.session_state.messages = []
+        st.session_state.history = ""
+        st.rerun()
 
-if st.sidebar.button("🗑️ Clear Chat History"):
-    st.session_state.messages = []
-    st.session_state.last_score = None
-    st.rerun()
+st.title("🛡️ RP2 Sales Training - Professional Edition")
 
-st.sidebar.divider()
-st.sidebar.info(f"**Student Behavior:**\n{PERSONAS[selected_p_name]['behavior']}")
-
-# 4. MAIN INTERFACE: AVATARS & VOICE BUTTONS
-col1, col2 = st.columns(2)
-
-with col1:
-    st.markdown('<div style="text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 15px; border: 1px solid #dee2e6;">', unsafe_allow_html=True)
-    st.image("https://cdn-icons-png.flaticon.com/512/3135/3135715.png", width=80)
-    st.markdown("### Salesperson (You)")
-    # Voice Input Feature
-    if st.button("🎤 Record Your Pitch"):
-        st.info("Listening... (Speak now)")
-    st.markdown('</div>', unsafe_allow_html=True)
-
-with col2:
-    st.markdown('<div style="text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 15px; border: 1px solid #dee2e6;">', unsafe_allow_html=True)
-    avatars = {
-        "Beginner": "https://cdn-icons-png.flaticon.com/512/3429/3429433.png",
-        "Skeptical": "https://cdn-icons-png.flaticon.com/512/4712/4712035.png",
-        "Price Sensitive": "https://cdn-icons-png.flaticon.com/512/2654/2654512.png",
-        "Interested": "https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
-    }
-    st.image(avatars.get(selected_p_name, avatars["Beginner"]), width=80)
-    st.markdown(f"### AI Student ({selected_p_name})")
-    # Voice Output Feature
-    if st.button("🔈 Play Audio Response"):
-        st.toast("Playing AI voice response...")
-    st.markdown('</div>', unsafe_allow_html=True)
-
-st.divider()
-
-# 5. PITCH PERFORMANCE SCORE
-if "last_score" in st.session_state and st.session_state.last_score:
-    st.markdown(f"""
-        <div style="background-color: #E8F5E9; border: 2px solid #4CAF50; padding: 15px; border-radius: 10px; text-align: center;">
-            <h3 style="color: #2E7D32; margin: 0;">Latest Pitch Score: ⭐ {st.session_state.last_score}/10</h3>
-        </div>
-    """, unsafe_allow_html=True)
-
-# 6. CHAT CONVERSATION LOGIC
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-
-# Display chat history
+# --- UI Layout: Chat Messages ---
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-# User Input
-if prompt := st.chat_input("Type your pitch here..."):
-    # Add user message to state
-    st.session_state.messages.append({"role": "user", "content": prompt})
+# --- INPUT HANDLING: Chat Box + Mic Next to it ---
+# ఇక్కడ మనం కాలమ్స్ వాడుతున్నాము (చాట్ బాక్స్ 90% + మైక్ 10%)
+col1, col2 = st.columns([0.9, 0.1])
+
+with col1:
+    prompt = st.chat_input("Type your pitch here...")
+
+with col2:
+    # మైక్ బటన్ ని ఇక్కడ పెట్టాము
+    audio_text = speech_to_text(key=f"mic_{st.session_state.mic_counter}", use_container_width=True)
+
+user_input = None
+if prompt:
+    user_input = prompt
+elif audio_text:
+    user_input = audio_text
+    st.session_state.mic_counter += 1
+
+# Process Input
+if user_input:
+    st.session_state.messages.append({"role": "user", "content": user_input})
     with st.chat_message("user"):
-        st.markdown(prompt)
+        st.markdown(user_input)
     
-    # Get AI response
-    combined_info = {**PERSONAS[selected_p_name], "course": selected_course}
+    combined_info = {**PERSONAS[selected_p_name], "name": selected_p_name, "course": selected_course}
     
     with st.chat_message("assistant"):
-        with st.status(f"{selected_p_name} is evaluating...", expanded=True) as status:
-            # Backend call
-            result = get_ai_response(prompt, combined_info)
-            time.sleep(0.5)
-            status.update(label="Response Ready!", state="complete", expanded=False)
+        with st.spinner("Thinking..."):
+            result = get_ai_response(user_input, combined_info, st.session_state.history)
+            st.markdown(result)
             
-            st.markdown(result["text"])
-            if result.get("score"):
-                st.session_state.last_score = result["score"]
-    
-    # Add assistant response to state
-    st.session_state.messages.append({"role": "assistant", "content": result["text"]})
+    st.session_state.messages.append({"role": "assistant", "content": result})
+    st.session_state.history += f"Salesperson: {user_input}\nStudent: {result}\n"
+    st.rerun()
+
+# --- End Session Logic ---
+st.divider()
+if st.button("End Session & Get Performance Report"):
+    with st.spinner("Generating professional feedback..."):
+        st.session_state.final_report = get_final_feedback(st.session_state.history)
+        st.rerun()
+
+if "final_report" in st.session_state:
+    st.markdown("### 📋 Final Sales Performance Report")
+    st.write(st.session_state.final_report)
+    if st.button("Start New Conversation"):
+        st.session_state.messages = []
+        st.session_state.history = ""
+        del st.session_state.final_report
+        st.rerun()
