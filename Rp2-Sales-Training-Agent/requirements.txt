@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+gtts
+google-generativeai
+python-dotenv
+pydantic
+transformers
+torch
+flask
+flask-cors
+requests
