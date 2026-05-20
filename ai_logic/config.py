@@ -1,7 +1,8 @@
+import os
+from dotenv import load_dotenv
 
-USE_LLM = True   # keep False for now (no API errors)
+load_dotenv()
 
-USE_LLM = False   # keep False for now (no API errors)
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-
-VOICE_ENABLED = True
+USE_LLM = OPENAI_API_KEY is not None and OPENAI_API_KEY != ""

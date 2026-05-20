@@ -1,5 +1,5 @@
-from ai_logic.voice import speak, listen
 from ai_logic.chatbot import get_response
+from ai_logic.voice import speak, listen
 
 print("🎤 Voice AI started (type 'exit' to stop)\n")
 
@@ -15,5 +15,7 @@ while True:
         break
 
     response = get_response(user_input)
+
+    print("AI:", response)
 
     speak(response)
