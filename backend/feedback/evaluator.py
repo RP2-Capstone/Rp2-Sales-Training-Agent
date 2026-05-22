@@ -1,39 +1,15 @@
 import json
-import google.generativeai as genai
-from config import GEMINI_API_KEY, GEMINI_MODEL, USE_LLM
+from groq import Groq
+from b_config import GROQ_API_KEY, GROQ_MODEL, USE_LLM
 
 
-if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel(
-        model_name=GEMINI_MODEL,
-        generation_config={
-            "temperature":     0.2,    # low = more consistent scoring
-            "max_output_tokens": 500,
-        }
-    )
+if GROQ_API_KEY:
+    client = Groq(api_key=GROQ_API_KEY)
+    print("✅ Groq client ready")
 else:
-    model = None
+    client = None
+    print("⚠️ Groq API key missing")
 
-
-def fallback_evaluation(conversation_history):
-    """Simple rule-based evaluation when Gemini is not available"""
-    turns = len(conversation_history)
-
-    return {
-        "score": min(10, turns),
-        "strengths": [
-            "Maintained conversation flow",
-            "Engaged with the student"
-        ],
-        "weaknesses": [
-            "Limited analysis (no AI evaluation)"
-        ],
-        "suggestions": [
-            "Enable AI evaluation for detailed feedback",
-            "Ask more probing questions"
-        ]
-    }
 
 # ✅ Load sentiment model
 try:
@@ -50,6 +26,31 @@ except ImportError:
 except Exception as e:           # ✅ catches other errors
     ML_AVAILABLE = False
     print(f"⚠️ ML loading failed: {e}")
+
+def fallback_evaluation(conversation_history):
+    """Simple rule-based evaluation when Groq is not available"""
+    turns = len(conversation_history)
+
+    return {
+        "final_score": min(10, turns),
+        "groq_score":  0,
+        "keyword_score": 0,
+        "tone_score":    0,
+        "skill_scores":  {},
+        "strengths": [
+            "Maintained conversation flow",
+            "Engaged with the student"
+        ],
+        "weaknesses": [
+            "Limited analysis (no AI evaluation)"
+        ],
+        "suggestions": [
+            "Enable AI evaluation for detailed feedback",
+            "Ask more probing questions"
+        ],
+        "keyword_analysis": None,
+        "tone_analysis":    None
+    }
 
 
 def build_chat_text(conversation_history):
@@ -201,7 +202,7 @@ def analyze_sentiment(conversation_history):
 
 def clean_json_response(text):
     """
-    Gemini sometimes wraps response in markdown
+    Groq sometimes wraps response in markdown
     This strips it before parsing
 
     Example input:
@@ -226,35 +227,36 @@ def evaluate_conversation(
     conversation_history,
     mode: str = "recent"
 ):
-    # ✅ Select history based on mode
-    if mode == "full":
-        history = conversation_history
-    else:
-        history = conversation_history[-10:]
+    history = conversation_history if mode == "full" else conversation_history[-10:]
 
     # ✅ No API → fallback
-    if model is None or not USE_LLM:
-        print("⚠️ Gemini not available")
+    if client is None or not USE_LLM:
+        print("⚠️ Groq not available")
         return fallback_evaluation(history)
 
     try:
         
         chat_text    = build_chat_text(history)
         prompt       = build_prompt(chat_text)
-        response     = model.generate_content(prompt)
-        cleaned      = clean_json_response(response.text)
-        gemini_result = json.loads(cleaned)
+        response     = client.chat.completions.create(
+            model    = GROQ_MODEL,
+            messages    = [{"role": "user", "content": prompt}],
+            temperature       = 0.2,
+            max_tokens = 500,
+        )
+        cleaned      = clean_json_response(response.choices[0].message.content.strip())
+        groq_result = json.loads(cleaned)
 
-        gemini_score = gemini_result.get("overall_score", 5)
+        groq_score = groq_result.get("overall_score", 5)
 
         keyword_result = detect_sales_keywords(history)
         keyword_score  = keyword_result["keyword_score"]
 
         tone_result = analyze_sentiment(history)
-        tone_score  = tone_result["tone_score"] if tone_result else gemini_score
+        tone_score  = tone_result["tone_score"] if tone_result else groq_score
 
         final_score = round(
-            gemini_score  * 0.60 +
+            groq_score  * 0.60 +
             keyword_score * 0.20 +
             tone_score    * 0.20,
             1
@@ -263,19 +265,13 @@ def evaluate_conversation(
         return {
             # ✅ Scores
             "final_score":   final_score,
-            "gemini_score":  gemini_score,
+            "groq_score":  groq_score,
             "keyword_score": keyword_score,
             "tone_score":    tone_score,
-
-            # ✅ Per skill breakdown
-            "skill_scores":  gemini_result.get("skill_scores", {}),
-
-            # ✅ Feedback
-            "strengths":     gemini_result.get("strengths",   []),
-            "weaknesses":    gemini_result.get("weaknesses",  []),
-            "suggestions":   gemini_result.get("suggestions", []),
-
-            # ✅ Detailed analysis
+            "skill_scores":  groq_result.get("skill_scores", {}),
+            "strengths":     groq_result.get("strengths",   []),
+            "weaknesses":    groq_result.get("weaknesses",  []),
+            "suggestions":   groq_result.get("suggestions", []),
             "keyword_analysis": keyword_result,
             "tone_analysis":    tone_result
         }
