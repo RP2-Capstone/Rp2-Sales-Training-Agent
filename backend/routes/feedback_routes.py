@@ -2,6 +2,17 @@ from fastapi import APIRouter
 
 router = APIRouter()
 
+@router.get("/sessions")
+def get_sessions():
+    """Get all past sessions for session picker"""
+    try:
+        from database import get_all_sessions
+        sessions = get_all_sessions()
+        return {"sessions": sessions}
+    except Exception as e:
+        print("Sessions Error:", e)
+        return {"error": "Could not fetch sessions"}
+
 @router.get("/evaluate/{session_id}")       # ✅ session_id in URL
 def evaluate(session_id: str, mode: str = "recent"):
     
@@ -31,7 +42,7 @@ def evaluate(session_id: str, mode: str = "recent"):
         save_feedback(
             session_id = session_id,
             score      = result.get("final_score", 0),
-            gemini_score  = result.get("gemini_score",  0),
+            groq_score  = result.get("groq_score",  0),
             keyword_score = result.get("keyword_score", 0),
             tone_score    = result.get("tone_score",    0),
             summary    = str(result)
