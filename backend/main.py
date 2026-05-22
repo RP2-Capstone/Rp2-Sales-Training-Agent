@@ -15,7 +15,6 @@ async def lifespan(app: FastAPI):
     # ✅ Runs when app STOPS
     print("🛑 Shutting down...")
 
-
 app = FastAPI(
     title="AI Sales Coach Backend",
     version="1.0.0",
