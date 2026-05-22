@@ -1,8 +1,14 @@
 fastapi
 uvicorn[standard]
 gtts
-google-generativeai
+google-genai
 python-dotenv
 pydantic
 transformers
 torch
+flask
+flask-cors
+requests
+Streamlit
+streamlit-mic-recorder
+groq
