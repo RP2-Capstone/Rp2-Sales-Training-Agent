@@ -1,13 +1,19 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from config import USE_LLM
-import uuid
+from b_config import USE_LLM
+import random
+import string
+
+def generate_session_id():
+    chars = string.ascii_uppercase + string.digits
+    code  = "".join(random.choices(chars, k=5))
+    return f"RP2-{code}"
 
 router = APIRouter()
 
 class ChatRequest(BaseModel):
     message:    str
-    persona:    str = "Beginner"
+    persona:    str = ""
     course:     str = ""
     session_id: str = ""
 
@@ -22,13 +28,14 @@ def fallback_response(user_input, course, rag_text=None):
     )
 
 
-@router.post("/")                          # ✅ only ONE @router.post("/")
+@router.post("/")                          
 def chat(user_message: ChatRequest):
     try:
-        # ✅ imports inside function
+        
         from database import get_conversation, save_conversation
-        from ai_logic.rag_engine import search
-        from ai_logic.llm_engine import generate_response
+        from ai_logic.rag import search
+        from ai_logic.llm import get_llm_response
+        from ai_logic.chatbot import get_response
         from voice.text_to_speech import convert_text_to_speech
 
         # ✅ Extract fields
@@ -37,7 +44,7 @@ def chat(user_message: ChatRequest):
         selected_course  = user_message.course
 
         # ✅ Generate session_id if not provided
-        session_id = user_message.session_id or str(uuid.uuid4())
+        session_id = user_message.session_id or generate_session_id()
 
         # ✅ Validate inputs
         if not message:
@@ -48,37 +55,30 @@ def chat(user_message: ChatRequest):
         # ✅ Get THIS student's history
         conversation_history = get_conversation(session_id)
 
-        # ✅ Add course context on first message
-        if len(conversation_history) == 0:
-            message = f"{selected_course} course introduction. User said: {message}"
-
+        
         # 🔍 RAG search
-        results = search(
-            query=f"{selected_course} {message}",
-            persona=selected_persona
-        )
+        retrieved_text = search(message)
 
-        if results and len(results) > 0:
-            top_result     = results[0]
+        if retrieved_text and len(retrieved_text) > 0:
+            top_result     = retrieved_text[0]
             retrieved_text = top_result.get("answer", "")
 
             if USE_LLM:
-                response_text = generate_response(
+                response_text = get_llm_response(
                     user_message   = message,
                     retrieved_text = f"Course: {selected_course}\n{retrieved_text}",
                     persona        = selected_persona,
                     history        = conversation_history
                 )
             else:
-                response_text = fallback_response(
-                    message,
-                    selected_course,
-                    retrieved_text
-                )
+                response_text = fallback_response(message,selected_course,retrieved_text)
         else:
-            response_text = (
-                f"Hmm… I didn't quite get that. "
-                f"Can you explain more about {selected_course}?"
+            response_text = get_response(
+                 user_message=message,
+                 persona=selected_persona,
+                 history=conversation_history,
+                 session_id=session_id,
+                 course=selected_course
             )
 
         # ✅ Save THIS student's conversation
@@ -92,7 +92,7 @@ def chat(user_message: ChatRequest):
 
         # 🔊 Generate voice
         audio_file = convert_text_to_speech(response_text)
-        audio_url  = f"/audio/{audio_file}" if audio_file else None
+        audio_url  = f"/voice/audio/{audio_file}" if audio_file else None
 
         # ✅ Return response + session_id back to frontend
         return {
@@ -104,3 +104,14 @@ def chat(user_message: ChatRequest):
     except Exception as e:
         print("Error:", e)
         return {"error": "Something went wrong in the backend"}
+    
+@router.get("/history/{session_id}")
+def get_chat_history(session_id: str):
+    """Return full conversation history for a session"""
+    try:
+        from database import get_conversation
+        history = get_conversation(session_id=session_id, limit=999)
+        return {"session_id": session_id, "history": history}
+    except Exception as e:
+        print("History Error:", e)
+        return {"error": "Could not fetch history"}
