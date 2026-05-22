@@ -2,7 +2,7 @@ from gtts import gTTS
 from pathlib import Path
 import uuid
 import re
-from config import (
+from b_config import (
     VOICE_ENABLED,
     VOICE_LANGUAGE,
     VOICE_SPEED
@@ -10,7 +10,7 @@ from config import (
 
 
 AUDIO_DIR       = Path("audio")
-MAX_TEXT_LENGTH = 300     # characters
+MAX_TEXT_LENGTH = 1000    # characters
 MAX_FILES_KEPT  = 20      # old files to keep
 
 
