@@ -1,0 +1,134 @@
+import asyncio
+import edge_tts
+from pathlib import Path
+import uuid
+import re
+from b_config import (
+    VOICE_ENABLED,
+    VOICE_LANGUAGE,
+    VOICE_SPEED
+)
+
+AUDIO_DIR = Path("audio")
+MAX_TEXT_LENGTH = 1000    # characters
+MAX_FILES_KEPT = 20      # old files to keep
+
+def clean_text(text: str) -> str:
+    """
+    Remove markdown and special characters
+    that sound bad when spoken out loud
+    """
+    # ✅ Remove bold markdown  **text**
+    text = re.sub(r'\*\*(.*?)\*\*', r'\1', text)
+
+    # ✅ Remove italic markdown  _text_ or *text*
+    text = re.sub(r'[_*](.*?)[_*]', r'\1', text)
+
+    # ✅ Remove bullet points  - item  or  • item
+    text = re.sub(r'^\s*[-•]\s+', '', text, flags=re.MULTILINE)
+
+    # ✅ Remove numbered lists  1. item  2. item
+    text = re.sub(r'^\s*\d+\.\s+', '', text, flags=re.MULTILINE)
+
+    # ✅ Remove hashtag headers  # Heading
+    text = re.sub(r'#+ ', '', text)
+
+    # ✅ Remove extra whitespace and newlines
+    text = re.sub(r'\s+', ' ', text).strip()
+
+    return text
+
+def trim_text(text: str, max_length: int = MAX_TEXT_LENGTH) -> str:
+    """
+    Cut text at sentence boundary
+    so audio doesn't end mid-sentence
+    """
+    if len(text) <= max_length:
+        return text
+
+    # ✅ Cut at last full sentence within limit
+    trimmed = text[:max_length].rsplit('.', 1)[0]
+
+    # ✅ Add period if missing
+    if not trimmed.endswith('.'):
+        trimmed += '.'
+
+    return trimmed
+
+def cleanup_old_files():
+    """
+    Keep only the latest MAX_FILES_KEPT audio files
+    """
+    files = sorted(
+        AUDIO_DIR.glob("*.mp3"),
+        key=lambda f: f.stat().st_mtime     # sort by modified time
+    )
+
+    # ✅ If more than limit → delete oldest
+    if len(files) > MAX_FILES_KEPT:
+        for old_file in files[:-MAX_FILES_KEPT]:
+            old_file.unlink()
+            print(f"🗑️ Deleted old audio: {old_file.name}")
+
+async def generate_edge_tts(text, filepath, gender="male"):
+    voice = (
+        "en-US-AriaNeural"
+        if gender == "female"
+        else "en-US-GuyNeural"
+    )
+
+    communicate = edge_tts.Communicate(
+        text=text,
+        voice=voice
+    )
+
+    await communicate.save(str(filepath))
+
+def convert_text_to_speech(text: str, gender: str = "male"):
+    """
+    Convert text to speech and save as mp3
+    """
+    # ✅ Check if voice is enabled in config
+    if not VOICE_ENABLED:
+        print("🔇 Voice disabled in config")
+        return None
+
+    # ✅ Check empty text
+    if not text or not text.strip():
+        print("⚠️ Empty text passed to TTS")
+        return None
+
+    try:
+        # ✅ Create audio folder if not exists
+        AUDIO_DIR.mkdir(exist_ok=True)
+
+        # ✅ Clean markdown from text
+        text = clean_text(text)
+
+        # ✅ Trim to max length at sentence boundary
+        text = trim_text(text)
+
+        print(f"🔊 Converting to speech: {text[:50]}...")
+
+        # ✅ Generate unique filename
+        filename = f"response_{uuid.uuid4().hex}.mp3"
+        filepath = AUDIO_DIR / filename
+
+        # ✅ Generate audio using config settings
+        asyncio.run(
+            generate_edge_tts(
+                text=text,
+                filepath=filepath,
+                gender=gender
+            )
+        )
+
+        # ✅ Clean old files after saving
+        cleanup_old_files()
+
+        print(f"✅ Audio saved: {filename}")
+        return filename
+
+    except Exception as e:
+        print(f"❌ TTS Error: {e}")
+        return None
