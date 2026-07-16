@@ -1,0 +1,1 @@
+An AI-powered sales training platform that simulates realistic student/customer interactions using Large Language Models (LLMs). The system enables sales representatives to practice conversations, improve communication skills, and receive automated performance evaluations through interactive voice and text-based sessions.
