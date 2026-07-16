@@ -25,7 +25,7 @@ VOICE_LANGUAGE = "en"       # language for gTTS
 VOICE_SPEED    = False      # False = normal speed, True = slow
 
 
-DB_PATH = "sales_training.db"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 
 APP_HOST = "0.0.0.0"
