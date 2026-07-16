@@ -1,0 +1,279 @@
+from fastapi import APIRouter
+from pydantic import BaseModel
+from b_config import USE_LLM
+from database import (create_session, get_user_dashboard, get_course_metrics)
+from fastapi import HTTPException
+import random
+import string
+
+def generate_session_id():
+    chars = string.ascii_uppercase + string.digits
+    code = "".join(random.choices(chars, k=5))
+    return f"RP2-{code}"
+    
+router = APIRouter()
+
+# Constants
+USE_LLM = True
+CLOSING = "closing"
+FINISHED = "finished"
+CLOSING_THRESHOLD = 10  # adjust if needed
+
+class ChatRequest(BaseModel):
+    message: str
+    persona: str = ""
+    course: str = ""
+    qualification: str = ""
+    subject: str = ""
+    session_id: str = ""
+    user_id: int = None
+
+def create_session(session_id, title, user_id):
+    from database import create_session as db_create_session
+    db_create_session(session_id, title, user_id)
+
+def should_start_closing(chat_count):
+    return chat_count >= CLOSING_THRESHOLD
+
+def fallback_response(message, course, retrieved_text):
+    return f"Based on {course}: {retrieved_text}"
+    
+@router.post("/")
+def chat(user_message: ChatRequest):
+    try:
+        from database import (
+            get_conversation, 
+            save_conversation, 
+            update_session_timestamp, 
+            get_conversation_stage, 
+            update_conversation_stage
+        )
+        from ai_logic.rag import search
+        from ai_logic.llm import get_llm_response
+        from ai_logic.chatbot import get_response
+        from text_to_speech import convert_text_to_speech
+
+        # 1. Extract fields
+        message = user_message.message
+        selected_persona = user_message.persona
+        selected_course = user_message.course
+        selected_qualification = user_message.qualification
+        selected_subject = user_message.subject
+
+        # 2. Session Management
+        if not user_message.session_id:
+            session_id = generate_session_id()
+            title = message[:30]
+            create_session(session_id, title, user_message.user_id)
+        else:
+            session_id = user_message.session_id
+
+        if not message:
+            return {"error": "Message cannot be empty"}
+        if not selected_course:
+            return {"error": "Course must be selected"}
+
+        # 3. History and Stage logic
+        conversation_history = get_conversation(session_id)
+        conversation_stage = get_conversation_stage(session_id)
+        chat_count = len(conversation_history)
+
+        # ✅ FIXED: Correctly indented "finished" check
+        if conversation_stage == "finished":
+            return {
+                "response": "This practice session has ended successfully. Please start a new chat to practice again.",
+                "session_id": session_id,
+                "conversation_finished": True
+            }
+
+        # Automatically switch to closing stage if threshold met
+        if should_start_closing(chat_count) and conversation_stage != CLOSING:
+            update_conversation_stage(session_id, CLOSING)
+            conversation_stage = CLOSING
+        
+        # 4. Retrieval (RAG)
+        retrieved_text = ""
+        search_results = search(message)
+        if search_results and len(search_results) > 0:
+            retrieved_text = search_results[0].get("answer", "")
+
+        # 5. Generate Response
+        response_text = ""
+        student_name = "Student"
+        student_gender = "unknown"
+
+        if USE_LLM:
+            llm_data = get_llm_response(
+                user_message=message,
+                retrieved_text=f"Course: {selected_course}\n{retrieved_text}",
+                persona=selected_persona,
+                qualification=selected_qualification,
+                subject=selected_subject,
+                history=conversation_history,
+                stage=conversation_stage,
+                chat_count=chat_count,
+                session_id=session_id
+            )
+            response_text = llm_data.get("response", "")
+            student_name = llm_data.get("student_name", "")
+            student_gender = llm_data.get("student_gender", "")
+        else:
+            if retrieved_text:
+                response_text = fallback_response(message, selected_course, retrieved_text)
+            else:
+                response_text = get_response(
+                    user_message=message,
+                    persona=selected_persona,
+                    history=conversation_history,
+                    session_id=session_id,
+                    course=selected_course
+                )
+
+        # 6. Save Conversation
+        save_conversation(
+            session_id=session_id,
+            salesperson_msg=message,
+            student_msg=response_text,
+            persona=selected_persona,
+            course=selected_course,
+            qualification=selected_qualification,
+            subject=selected_subject
+        )
+        update_session_timestamp(session_id)
+
+        # 7. Update Conversation Stage
+        if conversation_stage == "greeting":
+            update_conversation_stage(session_id, "waiting_for_rp2")
+
+        elif conversation_stage == "waiting_for_rp2":
+            if "rp2" in message.lower():
+                update_conversation_stage(session_id, "waiting_for_course")
+
+        elif conversation_stage == "waiting_for_course":
+            if selected_course:
+                update_conversation_stage(session_id, "course_discussion")
+
+        elif conversation_stage == "closing":
+            finish_keywords = [
+                "yes i want to join",
+                "i'm ready to enroll",
+                "proceed with admission",
+                "confirm my admission",
+                "book my seat",
+                "start my admission",
+                "i'll take this course"
+            ]
+            
+            if any(word in message.lower() for word in finish_keywords):
+                update_conversation_stage(session_id, FINISHED)
+                conversation_stage = FINISHED
+                
+        # 8. Generate voice
+        audio_file = convert_text_to_speech(
+            text=response_text,
+            gender=student_gender
+        )
+        audio_url = f"/voice/audio/{audio_file}" if audio_file else None
+
+        # ✅ FIXED: Ensure the return is outside the "if" logic but inside the "try" block
+        return {
+            "response": response_text,
+            "audio_url": audio_url,
+            "session_id": session_id,
+            "student_name": student_name,
+            "student_gender": student_gender,
+            "stage": conversation_stage
+        }
+
+    except Exception as e:
+        print("Error:", e)
+        return {"error": f"Something went wrong: {str(e)}"}
+
+@router.get("/history/{session_id}")
+def get_chat_history(session_id: str, user_id: int):
+    try:
+        from database import (
+            get_conversation,
+            session_belongs_to_user
+        )
+
+        if not session_belongs_to_user(session_id, user_id):
+            raise HTTPException(
+                status_code=403,
+                detail="Access denied"
+            )
+
+        history = get_conversation(
+            session_id=session_id,
+            limit=999
+        )
+
+        return {
+            "session_id": session_id,
+            "history": history
+        }
+
+    except HTTPException:
+        raise
+
+    except Exception as e:
+        print("History Error:", e)
+        raise HTTPException(
+            status_code=500,
+            detail="Could not fetch history"
+        )
+
+
+@router.get("/sessions")
+def get_sessions(user_id: int):
+    from database import get_user_sessions
+    return get_user_sessions(user_id)
+
+
+@router.get("/admin/users")
+def admin_users():
+    from database import get_all_users
+    return get_all_users()
+
+
+@router.get("/admin/user-sessions")
+def admin_user_sessions(user_id: int):
+    from database import get_user_sessions
+    return get_user_sessions(user_id)
+
+
+@router.get("/admin/history/{session_id}")
+def admin_history(session_id: str):
+    from database import get_conversation
+    history = get_conversation(session_id=session_id, limit=999)
+    return {"session_id": session_id, "history": history}
+
+
+@router.get("/dashboard")
+def dashboard(user_id: int):
+    dashboard_data = get_user_dashboard(user_id)
+    return dashboard_data
+
+
+@router.get("/course-metrics")
+def course_metrics(user_id: int):
+    return {"course_metrics": get_course_metrics(user_id)}
+
+@router.patch("/sessions/{session_id}/rename")
+def rename_session(session_id: str, body: dict):
+    from database import rename_session as db_rename_session
+    new_title = body.get("title", "").strip()
+    if not new_title:
+        raise HTTPException(status_code=400, detail="Title cannot be empty")
+    db_rename_session(session_id, new_title)
+    return {"success": True}
+
+
+@router.delete("/sessions/{session_id}")
+def delete_session(session_id: str, user_id: int):
+    from database import delete_session as db_delete_session
+    try:
+        db_delete_session(session_id, user_id)
+        return {"success": True}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
