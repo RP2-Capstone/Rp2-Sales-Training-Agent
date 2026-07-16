@@ -1,10 +1,17 @@
+import sys
+import os
+
+# ✅ Add parent folder to path so ai_logic can be found
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-from routes.chat_routes import router as chat_router
-from routes.feedback_routes import router as feedback_router
-from routes.voice_routes import router as voice_router
-from database import create_tables
+from chat_routes import router as chat_router
+from auth_routes import router as auth_router
+from feedback_routes import router as feedback_router
+from voice_routes import router as voice_router
+from database import create_tables, rename_session
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -32,8 +39,9 @@ app.add_middleware(
 app.include_router(chat_router,     prefix="/chat",     tags=["Chat"])
 app.include_router(feedback_router, prefix="/feedback", tags=["Feedback"])
 app.include_router(voice_router,    prefix="/voice",    tags=["Voice"])
+app.include_router(auth_router,     prefix="/auth",     tags=["Auth"])
 
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def home():
     return {"message": "Backend is running successfully"}
 
@@ -42,3 +50,12 @@ def reset(session_id: str):
     from database import clear_conversation
     clear_conversation(session_id)
     return {"message": "Conversation reset successfully", "session_id": session_id}
+    
+
+@app.put("/session/rename/{session_id}")
+def rename_chat(session_id: str, data: dict):
+    rename_session(session_id, data["title"])
+
+    return {
+        "status": "success"
+    }
